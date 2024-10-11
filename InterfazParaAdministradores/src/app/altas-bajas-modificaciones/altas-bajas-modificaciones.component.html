@@ -1,0 +1,63 @@
+
+<form (ngSubmit)="onSubmit()">
+    <div class="contenedor">
+        <div>
+            <label style="margin-left: 30%;" for="alta">Alta</label>
+            <input class="inputabmc" type="radio" id="alta" name="acciones" checked="true" (click)="alta()" />
+            <label for="baja">Baja</label>
+            <input class="inputabmc" type="radio" id="baja" name="acciones" (click)="baja()" />
+            <label for="modificar">Modificar</label>
+            <input class="inputabmc" type="radio" id="modificar" name="acciones" (click)="modificar()" />
+        </div>
+        <br>
+        <div>
+            <input type="checkbox"  id="activarCancion" name="activarCancion" [(ngModel)]="checkedCancion" (click)="marcandoCheckBoxCancion()">
+            <h3 style="display: inline;">   Cancion</h3>
+        </div>
+        <br>
+        <div> 
+            <label for="nombreCancion">Nombre de la Canción:</label>
+            <input class="inputRellenando" type="text"id="nombreCancion" [(ngModel)]="cancion.nombreCancion"name="nombreCancion"/>
+            <br>
+            <label for="fechaCreacion">Fecha de Creación:</label>
+            <input class="inputRellenando" type="date" id="candisable" [(ngModel)]="cancion.fechaCreacion" name="fechaCreacion" />
+            <br>
+            <label for="duracionCancion">Duración de la Canción:</label>
+            <input class="inputRellenando" type="text" id="candisable" [(ngModel)]="cancion.duracionCancion" name="duracionCancion"/>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div>
+          <input type="checkbox" id="activarInterprete" name="activarInterprete" [(ngModel)]="checkedInterprete" (click)="marcandoCheckBoxInterprete()">
+          <h3  style="display: inline;">  Interprete</h3>
+        </div>
+        <br>
+        <div>
+            <label for="nombreInterprete">Nombre del Interprete:</label>
+            <input class="inputRellenando" type="text" id="nombreInterprete" [(ngModel)]="interprete.nombreInterprete" name="nombreInterprete"/>
+            <br>
+            <label for="fechaCreacionGrupo">Año formacion del Grupo:</label>
+            <input class="inputRellenando" type="Text" id="candisable"[(ngModel)]="interprete.fechaCreacionGrupo" name="fechaCreacionGrupo"/>
+            <br>
+            <label for="paisOrigen">País de Origen:</label>
+            <input class="inputRellenando" type="text" id="candisable" [(ngModel)]="interprete.paisOrigen" name="paisOrigen"/>
+        </div>
+        <br>
+        <br>
+        <div >
+          <input type="checkbox" id="activarGenero" name="activarGenero" [(ngModel)]="checkedGenero" (click)="marcancoCheckBoxGenero()">
+          <h3 style="display: inline;">  Género</h3>
+        </div>
+        <br>
+        <div>
+            <label for="tipoGenero">Tipo de Género:</label>
+            <input class="inputRellenando" type="text" id="candisable" [(ngModel)]="genero.tipoGenero" name="tipoGenero"/>
+        </div>
+        <br>
+        <div>
+         <input class="boton" type="submit" value="Enviar">
+        </div>
+    </div>
+  </form>
+ 

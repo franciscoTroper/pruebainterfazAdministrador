@@ -1,0 +1,32 @@
+.novedades-container {
+    margin-top: 20px;
+  }
+  
+  .novedades-container h2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 100vw; 
+    overflow-x: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .novedades-content {
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    
+    
+  }
+  
+  .cuadro-cancion {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  
+ 

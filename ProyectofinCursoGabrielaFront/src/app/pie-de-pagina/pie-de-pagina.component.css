@@ -1,0 +1,50 @@
+footer {
+    
+    background-color: #270404;
+    color: #aa4a4a;
+    padding: 20px 0;
+    text-align: center;
+    
+  }
+  
+  .footer-container {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px; /* Añadir padding para que el contenido no toque los bordes */
+    box-sizing: border-box; /* Asegurarse de que el padding se incluya en el ancho total */
+    background-color: #000000;
+    
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    color: #ffffff;
+  }
+  
+  .footer-section h4 {
+    border-bottom: 2px solid #000000;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .footer-section p,
+  .footer-section ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .footer-section a {
+    color: #fffdfd;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    text-decoration: underline;
+  }
